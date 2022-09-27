@@ -34,12 +34,12 @@
                                 {{/if}}
                                 <div class="gh-article-meta-wrapper">
                                 <h4 class="gh-author-name">
-                                    <a href="{{url}}">{{name}}</a>
+                                    <a href="{{url}}" class="umami--click--post-author-name">{{name}}</a>
                                 </h4>
                             {{/primary_author}}
                             <time class="gh-article-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></div>
                             {{#if primary_tag}}
-                                <a class="gh-article-tag" href="{{primary_tag.url}}" style="--tag-color: {{primary_tag.accent_color}}">{{primary_tag.name}}</a>
+                                <a class="gh-article-tag umami--click--post-tag" href="{{primary_tag.url}}" style="--tag-color: {{primary_tag.accent_color}}">{{primary_tag.name}}</a>
                             {{/if}}
                         </div>
                     </aside>
@@ -56,7 +56,7 @@
                     <nav class="gh-navigation">
                         <div class="gh-navigation-previous">
                             {{#prev_post}}
-                                <a class="gh-navigation-link" href="{{url}}">← Previous</a>
+                                <a class="gh-navigation-link umami--click--post-previus-link" href="{{url}}">← Previous</a>
                             {{/prev_post}}
                         </div>
 
@@ -64,7 +64,7 @@
 
                         <div class="gh-navigation-next">
                             {{#next_post}}
-                                <a class="gh-navigation-link" href="{{url}}">Next →</a>
+                                <a class="gh-navigation-link umami--click--post-next-link" href="{{url}}">Next →</a>
                             {{/next_post}}
                         </div>
                     </nav>
